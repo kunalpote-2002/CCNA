@@ -39,47 +39,53 @@ Router# configure terminal
 5. Set Hostname
 ```
 Router(config)# hostname R1
-pratham(config)#
+kunal(config)#
 ```
-<img width="530" alt="Screenshot 2025-09-12 215431" src="https://github.com/user-attachments/assets/44ab3fc8-b54e-4a73-ad12-0cf665a35cc6" />
+<img width="272" height="49" alt="image" src="https://github.com/user-attachments/assets/cee0b40e-f827-4d12-b759-650fe5ae365f" />
+
 
 
 6. Set Enable Password (for privileged exec mode)
 ```
-Pratham(config)# enable password Praju
+kunal(config)# enable password Praju
 ```
-<img width="503" alt="Screenshot 2025-09-12 215604" src="https://github.com/user-attachments/assets/5ce0acaa-7e22-4a73-8052-589f80d543a8" />
+<img width="336" height="56" alt="image" src="https://github.com/user-attachments/assets/ca4eeb11-c1c7-4416-a182-3d89de10665a" />
+
 
 
 7. Encrypt All Passwords
 ```
-Pratham(config)# service password-encryption
+kunal(config)# service password-encryption
 ```
-<img width="500" alt="Screenshot 2025-09-12 215758" src="https://github.com/user-attachments/assets/45c7df38-3bc8-4f20-b74a-8eae9fead411" />
+<img width="381" height="72" alt="image" src="https://github.com/user-attachments/assets/5aa724ad-46fe-4c76-bf70-242ce53f44c4" />
+
 
 
 8. Set MOTD Banner (Message of the Day)
 ```
-Pratham(config)# banner motd # Welcome To NextGen Education #
+kunal(config)# banner motd # Welcome To NextGen Education #
 ```
-<img width="553" alt="Screenshot 2025-09-12 215958" src="https://github.com/user-attachments/assets/ca1e55dd-d930-489c-bf14-a947fd5776b9" />
+<img width="539" height="104" alt="image" src="https://github.com/user-attachments/assets/d223a495-2a09-4f06-bd4c-3d63bbee8622" />
+
 
 
 
 9. Configure Interfaces
 ```
-Pratham(config)# interface fastEthernet 0/0
-Pratham(config-if)# ip address 192.168.1.1 255.255.255.0
-Pratham(config-if)# no shutdown
-Pratham(config-if)# exit
+kunal(config)# interface fastEthernet 0/0
+kunal(config-if)# ip address 192.168.1.1 255.255.255.0
+kunal(config-if)# no shutdown
+kunal(config-if)# exit
 ```
-<img width="557" alt="Screenshot 2025-09-12 220132" src="https://github.com/user-attachments/assets/78524d8d-2c07-4dd9-9340-0fff5d4df3bf" />
+<img width="584" height="223" alt="image" src="https://github.com/user-attachments/assets/a6cb21da-43b7-4ed4-a3d3-e00436469b25" />
+
 
  10. Save Configuration
 ```
-Pratham# copy running-config startup-config
+kunal# copy running-config startup-config
 ```
-<img width="908" height="280" alt="Screenshot 2025-09-12 220324" src="https://github.com/user-attachments/assets/58174e4b-eb4e-40b0-a4c3-280408f7e7c5" />
+<img width="370" height="151" alt="image" src="https://github.com/user-attachments/assets/39e863a1-b1b3-4851-a04a-e2975b510460" />
+
 
 11. Pc Configuration
 - Click PC0 → Desktop → IP Configuration.
@@ -97,20 +103,23 @@ Pratham# copy running-config startup-config
 
 1. Check hostname & banner
 ```
-Pratham# show running-config
+kunal# show running-config
 ```
-<img width="566" alt="Screenshot 2025-09-12 220459" src="https://github.com/user-attachments/assets/7ed216a3-cc04-4e10-9bd1-a57b1d29cd61" />
+<img width="396" height="441" alt="image" src="https://github.com/user-attachments/assets/45199ed3-3c47-4797-b29a-52333b860b5b" />
+
 
 
 2. Check interfaces
 ```
-Pratham# show ip interface brief
+kunal# show ip interface brief
 ```
-<img width="542" alt="image" src="https://github.com/user-attachments/assets/ff5f8177-f930-4c86-a120-5693240f1a74" />
+<img width="764" height="280" alt="image" src="https://github.com/user-attachments/assets/548324e3-2fdd-4478-95db-37050a81ec0b" />
+
 
 
 3. Test connectivity
 ```
-Pratham# ping 192.168.1.2
+kunal# ping 192.168.1.2
 ```
-<img width="542" alt="Screenshot 2025-09-12 221219" src="https://github.com/user-attachments/assets/d5b900ef-275f-435c-bada-d6864e19841d" />
+<img width="621" height="171" alt="image" src="https://github.com/user-attachments/assets/b5349eb9-e86c-4f78-b415-856785e49a3e" />
+
